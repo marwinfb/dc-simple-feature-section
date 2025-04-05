@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-outfit: 'Outfit', sans-serif;
+
+    --color-theme-100: #121826;
+    --color-theme-200: #9DA3AE;
+    --color-theme-300: #E5E7EB;
+    --color-theme-400: #212936;
+    --color-theme-500: #DEE9FC;
+    --color-theme-600: #FBE5E6;
+    --color-theme-700: #FCEED8;
+    --color-theme-800: #D2D5DA;
+}
+
+@layer base {
+    body {
+        @apply bg-[url(/Background_image.svg)] md:bg-[url(/Background_image@2x.png)] lg:bg-[url(/Background_image@3x.png)] lg:bg-cover lg:center;
+    }
+}
